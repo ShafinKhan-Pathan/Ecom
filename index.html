@@ -18,8 +18,8 @@
                 <img src="./assets/Library.svg" class="nav__logo" alt="Logo">
                 <ul class="nav__links">
                     <li><a class="nav__link" href="#">Home</a></li>
-                    <li><a class="nav__link" href="#">Contact</a></li>
-                    <li><a class="nav__link nav__link--primary" href="#">Products</a></li>
+                    <li><a class="nav__link" href="mailto:kshafin575@gmail.com">Contact</a></li>
+                    <li><a class="nav__link nav__link--primary" href="#features">Books</a></li>
                 </ul>
             </div>
         </nav>
@@ -28,7 +28,7 @@
                 <div class="header__description">
                     <h1>USA's most awarded online library platform</h1>
                     <h2>Find your dream book with <span class="span__modifier">library</span> </h2>
-                    <button class="btn">Explore Books</button>
+                    <a href="#features"><button class="btn">Explore Books</button></a>
                 </div>
                 <figure class="header__image--wrapper">
                     <img src="./assets/Undraw_Books.svg" alt="">
@@ -122,12 +122,12 @@
                             </figure>
                             <p class="feature__booktitle">Deep Work</p>
                             <div class="feature__book--rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-half"></i>
-                        </div>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half"></i>
+                            </div>
                             <p class="feature__price"><span class="feature__normal--price">$59.99</span>$19.99</p>
                         </div>
                     </div>
@@ -250,12 +250,30 @@
         <section id="morebooks">
             <div class="morebook__container">
                 <div class="morebook__row">
-                    <h1 class="morebook__subtitle">Explore More <span class="span__modifier"> Books </span></h1>
-                    <button class="morebooks__btn">Browse Books</button>
+                    <div class="morebooks__description">
+                        <h1 class="morebook__subtitle">Explore More <span class="span__modifier"> Books </span></h1>
+                        <a href="#features"><button  class="morebooks__btn">Browse Books</button></a>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
+    <footer id="myfooter">
+        <div class="row footer__row">
+            <a href="#">
+            <figure id="footer__logo">
+                <img class="footer__logo--image" src="./assets/Library.svg" alt="">
+            </figure>
+        </a>
+            <div class="footer__lists">
+                <a href="#" class="footer__link">Home</a>
+                <a class="footer__link no-cursor">About</a>
+                <a href="#latest" class="footer__link">Books</a>
+                <a class="footer__link no-cursor">Contact</a>
+            </div>
+            <p class="footer__para">Copyright &copy; 2024 ShafinKhan</p>
+        </div>
+    </footer>
 </body>
 
 </html>
