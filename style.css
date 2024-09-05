@@ -21,6 +21,7 @@ body{
 
 .nav__logo{
     width: 150px;
+    filter: grayscale(1) invert(0);
 }
 .nav__container{
     width: 100%;
@@ -40,18 +41,18 @@ body{
     font-size: 18px;
     font-weight: 500;
     padding: 6px;
-    color: #8a2be2;
+    color: #03045e;
 }
 li{
     list-style-type: none;
 }
 .nav__link:hover{
     text-decoration: underline;
-    color: blueviolet;
+    color: #03045e;
 }
 .nav__link--primary{
     
-    border: 2px solid blueviolet;
+    border: 2px solid #03045e;
     border-radius: 4px;
 }
 .nav__link--primary:hover{
@@ -63,7 +64,7 @@ li{
 .btn__menu{
     background-color: transparent;
     border: none;
-    color:#8a2be2 ;
+    color:#03045e ;
     font-size: 24px;
     text-align: center;
     display: none;
@@ -123,7 +124,7 @@ li{
 
 /* Landing Page */
 #landingpage{
-    background-color: rgba(137, 43, 226, 0.173);
+    background-color: #caf0f880;
 }
 header{
     height: calc(100vh - 100px);
@@ -148,10 +149,10 @@ img{
     align-items: center;
 }
 .span__modifier{
-    color: blueviolet;
+    color: #03045e;
 }
 h1{
-    color: blueviolet;
+    color: #03045e;
     font-size: 40px;
     text-align: center;
 }
@@ -164,7 +165,7 @@ button{
     cursor: pointer;
 }
 .btn{
-    background-color: blueviolet;
+    background-color: #03045e;
     color: white;
     font-size: 20px;
     padding: 8px;
@@ -206,8 +207,8 @@ button{
     max-width: 200px;
 }
 .highlight__image{
-    border: 4px solid rgba(137, 43, 226, 0.278);
-    color: blueviolet;
+    border: 4px solid #caf0f880;
+    color: #03045e;
     border-radius: 4px;
     padding: 16px 24px;
     margin-bottom: 16px;
@@ -252,7 +253,7 @@ button{
 #features{
     width: 100%;
     height: 900px;
-    background-color: rgba(137, 43, 226, 0.173);
+    background-color: #caf0f880;
 }
 .section__row{
     width: 100%;
@@ -293,6 +294,7 @@ button{
     justify-content: center;
     align-items: center;
     text-align: center;
+    color: #03045e;
 
 }
 .feature__booktitle:hover{
@@ -357,6 +359,7 @@ button{
 }
 .latest__booktitle{
     font-size: 16px;
+    color: #03045e;
     font-weight: 700;
     display: flex;
     justify-content: center;
@@ -370,6 +373,7 @@ button{
 .latest__price{
     font-size: 24px;
     display: flex;
+    color: #03045e;
     justify-content: center;
     align-items: center;
 }
@@ -384,7 +388,7 @@ button{
     margin-top: 100px;
     width: 100%;
     height: 150px;
-    background-color:rgba(137, 43, 226, 0.173);
+    background-color:#caf0f880;
 }
 .morebook__container{
     width: 100%;
@@ -413,7 +417,7 @@ button{
     align-items: center;
 }
 .morebooks__btn{
-    background-color: blueviolet;
+    background-color: #03045e;
     width: 100%;
     margin: 0 auto;
     color: white;
@@ -433,7 +437,7 @@ button{
 }
 /* footer */
 #myfooter{
-    background-color: #242424;
+    background-color: #07084b;
 }
 .footer__row{
     display: flex;
