@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./assets/final.png">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="index.js"></script>
+    <script src="/books.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>AZS Store</title>
+</head>
+
+<body id="books__body">
+  <section>
+    <nav>
+      <div class="nav__container">
+          <a href=""><img src="./assets/Library.svg" class="nav__logo" alt="Logo"></a>
+          <ul class="nav__links">
+              <li><a class="nav__link" href="/index.html">Home</a></li>
+              <li><a class="nav__link" href="mailto:kshafin575@gmail.com">Contact</a></li>
+              <li><a class="nav__link nav__link--primary" href="/books.html">Books</a></li>
+          </ul>
+          <button class="btn__menu" onclick="openMenu()">
+              <i class="fas fa-bars"></i>
+          </button>
+          <div class="menu__drop">
+              <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                  <i class="fas fa-times"></i>
+              </button>
+              <ul class="menu__links">
+                  <li class="menu__list"><a class="menu__link" href="#home" onclick="closeMenu()">Home</a></li>
+                  <li class="menu__list"><a class="menu__link" href="#" onclick="closeMenu()">Books</a></li>
+                  <li><a class="no-cursor menu__link">Contact</a></li>
+              </ul>
+          </div>
+      </div>
+      
+  </nav>
+  </section>
+
+  <main id="books__main">
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="books__header">
+          <h2 class="section__title books__header--title">
+            All <span class="span__modifier">Books</span>
+          </h2>
+          <select id="filter" onchange="filterBooks(event)">
+            <option value="" disabled selected>Sort</option>
+            <option value="LOW_TO_HIGH">Price, Low to High</option>
+            <option value="HIGH_TO_LOW">Price, High to Low</option>
+            <option value="RATING">By Ratings</option>
+          </select>
+        </div>
+        <div class="books books__loading">
+          <i class="fas fa-spinner books__loading--spinner"></i>
+        </div>
+          <!-- <div class="book">
+            <figure class="book__img--wrapper">
+              <img class="book__img" src="assets/atomic habits.jpg" alt="">
+            </figure>
+            <div class="book__title">
+              Atomic Habits
+            </div>
+            <div class="book__ratings">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="book__price">
+              <span class="book__price--normal">$59.95</span> $14.95
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+  </main>
+<footer>
+    <div class="row footer__row">
+        <a href="#">
+        <figure id="footer__logo">
+            <img class="footer__logo--image" src="./assets/Library.svg" alt="">
+        </figure>
+    </a>
+        <div class="footer__lists">
+            <a href="#" class="footer__link">Home</a>
+            <a class="footer__link no-cursor">About</a>
+            <a href="#latest" class="footer__link">Books</a>
+            <a class="footer__link no-cursor">Contact</a>
+        </div>
+        <p class="footer__para">Copyright &copy; 2024 ShafinKhan</p>
+    </div>
+</footer>
+</body>
+
+</html>

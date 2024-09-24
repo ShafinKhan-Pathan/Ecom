@@ -8,6 +8,7 @@
 html{
     scroll-behavior: smooth;
 }
+
 nav{
     height: 100px;
     display: flex;
@@ -18,7 +19,14 @@ body{
     max-width: 100vw;
     overflow-x: hidden;
 }
-
+.container {
+    padding: 56px 0;
+}
+  .row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 .nav__logo{
     width: 150px;
     filter: grayscale(1) invert(0);
@@ -435,8 +443,39 @@ button{
 .no-cursor{
     cursor: not-allowed;
 }
+
+.books__loading--spinner{
+    display: none !important;
+}
+.books__loading .books__loading--spinner{
+    display: block !important;
+}
+
+
+.books__loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    font-size: 60px;
+    
+}
+.fa-spinner{
+    animation: rotate 600ms infinite linear;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 /* footer */
-#myfooter{
+footer{
+    height: 100%;
+    margin-top: auto;
     background-color: #07084b;
 }
 .footer__row{
@@ -455,15 +494,80 @@ button{
 .footer__lists, .footer__para{
     color: white;
 }
+.footer__lists{
+    margin: 20px 0 24px 0;
+
+}
 .footer__link{
     font-size: 16px;
     text-decoration: none;
     margin-right: 16px;
     color: white;
+    padding: 0 8px;
 }
 .footer__link:hover{
     text-decoration: underline;
 }
+
+/* Books Page */
+  
+#books__main {
+    flex: 1;
+  }
+  .books__header--title {
+    margin-bottom: 0;
+  }
+  .book {
+    width: 25%;
+    padding: 24px;
+  }
+  .book__img--wrapper {
+    margin-bottom: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+  }
+  .book__img {
+    max-height: 380px;
+    transition: all 300ms ease;
+    cursor: not-allowed;
+    /* Added after tutorial to maintain image aspect ratio */
+    object-fit: contain;
+    object-position: left;
+  }
+  .book__title {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  
+  .book__title:hover {
+    text-decoration: underline;
+    cursor: not-allowed;
+  }
+  .book:hover .book__img {
+    transform: scale(1.03);
+  }
+  .book__ratings {
+    margin-bottom: 8px;
+    color: #fabf2a;
+  }
+  
+  .book__price--normal {
+    text-decoration: line-through;
+    padding-right: 6px;
+    color: #bfbfbf;
+  }
+  .books__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+  }
+  .books {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
 
 @media (max-width: 550px){
     .nav__links{
