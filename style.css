@@ -269,7 +269,7 @@ button{
     margin: 0 auto;
 }
 .features__subtitle{
-    padding-top: 16vw;
+    padding-top: 11vw;
 }
 
 .features__wrapper{
@@ -279,7 +279,7 @@ button{
 }
 .feature{
     width: calc(100% / 4);
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     padding: 10px 16px;
 }
 .feature__image--wrapper{
@@ -604,8 +604,12 @@ footer{
     .btn{
         font-size: 14px;
     }
+    #features{
+        height: 100%;
+
+    }
     .feature{
-        width: 50%;
+        width: calc(100% / 2);
     }
     .feature__booktitle{
         font-size: 16px;
